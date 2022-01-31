@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics</title>
+    <link rel="stylesheet" href="../styles/stylevideos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="../index.html" class="brand">Calisthenics</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="./productos.html">Productos</a>
+          <a href="./videos.html">Mundiales</a>
+          <a href="./Profesores.html">Profesores</a>
+          <a href="./Contacto.html">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="../videos/Street Workout_Calisthenics Male WORLD Championship 2021.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/Street Workout_Calisthenics Female WORLD Championship 2021.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/World Cup stage Jurmala 2021.mp4"" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/Street Workout  WORLD CHAMPIONSHIP 2019.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/Street Workout WORLD CUP 2019 Jurmala.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/STREET WORKOUT SUPER FINAL 2018.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/Street Workout Freestyle WORLD CHAMPIONSHIP 2017, MOSCOW.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/World Cup stage in Jurmala 2017.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/STREET 2015.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="../videos/World Cup Championship (Bahrain 2015).mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>World Cup Championship <br><span> 2021</span></h1>
+        <p>Mundial 2021 Categoria Hombres.</p>
+        
+      </div>
+      <div class="content">
+        <h1>Female  World Cup Championship  <br><span>2021</span></h1>
+        <p> Mundial 2021 Categoria Mujeres </p>
+        
+      </div>
+      <div class="content">
+        <h1> World Cup stage Jurmala 2021 <br><span></span></h1>
+        <p>  </p>
+        
+      </div>
+      <div class="content">
+        <h1> WORLD CHAMPIONSHIP <br><span>2019</span></h1>
+        <p></p>
+      
+      </div>
+      <div class="content">
+        <h1>Street Workout WORLD CUP 2019  <br><span>Jurmala</span></h1>
+        <p>CHAMPIONSHIP 2019</p>
+        
+      </div>
+      <div class="content">
+        <h1> World Cup SUPER FINAL 2018 <br><span>Egipto</span></h1>
+        <p>Super Final 2018</p>
+        <a href="#">Ver</a>
+      </div>
+      <div class="content">
+        <h1> WORLD CHAMPIONSHIP 2017 <br><span>MOSCOW</span></h1>
+        <p> WORLD CHAMPIONSHIP</p>
+        <a href="#">Ver</a>
+      </div>
+      <div class="content">
+        <h1> World Cup 2017  <br><span>Jurmala</span></h1>
+        <p>World cup</p>
+        <a href="#">Ver</a>
+      </div>
+      <div class="content">
+        <h1> WORLD CHAMPIONSHIP  <br><span>2015</span></h1>
+        <p>2015</p>
+        <a href="#">Ver</a>
+      </div>
+      <div class="content">
+        <h1> World Cup Championship Bahrain  <br><span>2015</span></h1>
+        <p>World Cup Championship</p>
+        <a href="#">Ver</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        
+        
+        
+      
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>

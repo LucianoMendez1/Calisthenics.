@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styleproducto.css">
+  <link rel="stylesheet" href="../fonts/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" defer />
+
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  <script src="../carrito/carrito-local.js" defer></script>
+  <script defer src="../index.js" defer></script>
+  <title>Calisthenics</title>
+</head>
+
+
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="logo nav-link">Calisthenics</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="../paginas/productos.html" class="nav-menu-link nav-link">Productos</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../paginas/videos.html" class="nav-menu-link nav-link">Mundiales</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../paginas/Profesores.html" class="nav-menu-link nav-link">Profesores</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="./Contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+        </li>
+      </ul>
+
+
+      <div class="carrito-container">
+        <a href="#modal" rel="modal:open">
+          <img src="../img/carrito.png" alt="Carrito Icono">
+        </a>
+      </div>
+
+
+      <div id="modal" class="modal">
+        <h3>Productos en el carrito</h3>
+        <table id="table-modal">
+          <th>Nombre</th>
+          <th>Precio</th>
+          <tbody id="carrito"></tbody>
+        </table>
+      </div>
+
+
+    </nav>
+    <div id="container"></div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div class="container">
+      <div id="prod"></div>
+    </div>
+    <div id="productos"></div>
+    <div id="idCategoria"></div>
+  </main>
+
+
+
+  <footer>
+    <div class="textos">
+      <div class="titulo">
+        <p>
+          Comprar equipo para tu entrenamiento
+        </p>
+      </div>
+      <div class="texto">
+        <p></p>¿por qué? Los deportes Calistenia y Street Workout tienen su origen en entrenar con el propio peso
+        corporal y sin equipamiento en el entrenamiento. Sin embargo, el deporte ha evolucionado, cada vez son más los
+        deportistas que quieren sacar más partido a su entrenamiento y no quieren prescindir de equipos como barras
+        paralelas, tiza líquida y bandas de resistencia para el impulso extra en su entrenamiento. Ya sea para evitar
+        lesiones con vendajes para codos y muñecas, para calentar con bandas de resistencia o para más variación con
+        paralelas. La calistenia es un deporte versátil e incluye muchas facetas y ejercicios que el equipo apoya y
+        agrega valor en estos puntos.
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+<!-- <!--===Modal===-->
+<!--  <div id="modal" class="modal">
+  <h3>Libros en el carrito</h3>
+  <hr>
+  <table id="reverse-elements">
+      <th></th>
+      <th>Titulo</th>
+      <th>Precio</th>
+      <tbody id="carrito"></tbody>
+  </table> -->
+<!-- </div>  -->

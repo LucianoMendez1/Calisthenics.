@@ -1,0 +1,140 @@
+{
+	"productos": [
+		{
+			"id": 1,
+			"nombre": "Anillas",
+			"precio": 6000,
+			"categoria": 2,
+			"marca": "Gorbanation",
+			"stock": 5,
+			"img":"../img/imgproductos/anillas-plastico.jpg"
+		},
+		{
+			"id": 2,
+			"nombre": "Kit Anillas",
+			"precio": 8500,
+			"categoria": 2,
+			"marca": "Gorbanation",
+			"stock": 3,
+			"img":"../img/imgproductos/anillas-plastico.jpg"
+		},
+		{
+			"id": 3,
+			"nombre": "Kit banda",
+			"precio": 4500,
+			"categoria": 3,
+			"marca": "Gorbanation",
+			"stock": 6,
+			"img":"../img/imgproductos/bandaselasticaskit.jpg"
+		},
+		{
+			"id": 4,
+			"nombre": "Banda Amarilla",
+			"precio": 3000,
+			"categoria": 3,
+			"marca": "Gorbanation",
+			"stock": 6,
+			"img":"../img/imgproductos/bandaselasticaAmarilla.jpg"
+		},
+		{
+			
+			"id": 5,
+			"nombre": "Banda roja",
+			"precio": 3000,
+			"marca": "Gorbanation",
+			"categoria": 3,
+			"stock": 6,
+			"img":"../img/imgproductos/bandaselasticaroja.jpg"
+		},
+		{
+			"id": 6,
+			"nombre": "Banda verde",
+			"precio": 3000,
+			"categoria": 3,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/bandaselasticaverde.jpg"
+		},
+		{
+			"id": 7,
+			"nombre": "Banda Naranja",
+			"precio": 3000,
+			"marca": "Gorbanation",
+			"categoria": 3,
+			"stock": 6,
+			"img":"../img/imgproductos/bandavioleta.jpg"
+		},
+		{
+			"id": 8,
+			"nombre": "Muñequera blanca",
+			"precio": 2000,
+			"categoria": 4,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/muñequenegra.jpg"
+		},
+		{
+			"id": 9,
+			"nombre": "Muñequera negra",
+			"precio": 2000,
+			"marca": "Gorbanation",
+			"categoria": 4,
+			"stock": 4,
+			"img":"../img/imgproductos/muñequeceleste.jpg"
+		},
+		{
+			"id": 10,
+			"nombre": "Muñequera roja",
+			"precio": 2000,
+			"categoria": 4,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/muñequeraroja.jpg"
+		}, 
+		{
+			"id": 11,
+			"nombre": "Muñequera naranja",
+			"precio": 2000,
+			"categoria": 4,
+			"marca": "Gorbanation",
+			"stock": 4,
+			"img":"../img/imgproductos/muñequeraverde.jpg"
+		},
+		{
+			"id": 12,
+			"nombre": "Calleras",
+			"precio": 3500,
+			"categoria": 4,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/calleras.jpg"
+		},
+		{
+			"id": 13,
+			"nombre": "paralelas medera chicas",
+			"precio": 3500,
+			"categoria":5,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/paralelas-metal.jpg" 
+		},
+		{
+			"id": 14,
+			"nombre": "paralelas madera medianas",
+			"precio": 3500,
+			"categoria": 5,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/paralelas-metal2.jpg"
+		},
+		{
+			"id": 15,
+			"nombre": "Kit paralelas",
+			"precio": 3500,
+			"categoria": 5,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/paralelas-metal3.jpg"
+		}
+	]
+}
