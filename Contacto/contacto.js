@@ -13,7 +13,7 @@ let mensaje;
 let contactoDeUsuario;
 
 const expresiones = {
-    nombreApellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+    nombreApellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     correoElectronico: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     mensaje: /^[a-zA-ZÀ-ÿ\s]{1,500}$/,
 }
@@ -32,7 +32,7 @@ const enviarContacto = () => {
     correoElectronico = $("#correoElectronico").val();
     mensaje = $("#comentarios").val();
 
-    if (nombreApellido !== " " && correoElectronico !== " " && mensaje !== " ") {
+    if (nombreApellido!="" && correoElectronico !="" && mensaje !="") {
 
         contactoDeUsuario = new Contacto(nombreApellido, correoElectronico, mensaje);
 
@@ -48,13 +48,13 @@ const enviarContacto = () => {
                 $("#button-contact").show()
                     .css({ "background-color": "green" })
                 boton.value = "Enviado!";
-               
+
                 setTimeout(() => {
-                  
+
                 }, 500);
             }, 400);
         }, 300);
-       
-    } 
+
+    }
 }
 
