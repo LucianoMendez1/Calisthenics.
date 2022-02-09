@@ -1,4 +1,7 @@
+
+
 {
+
 	"productos": [
 		{
 			"id": 1,
@@ -16,7 +19,7 @@
 			"categoria": 2,
 			"marca": "Gorbanation",
 			"stock": 3,
-			"img":"../img/imgproductos/anillas-plastico.jpg"
+			"img":"../img/imgproductos/anillasmadera.JFIF"
 		},
 		{
 			"id": 3,
@@ -29,7 +32,7 @@
 		},
 		{
 			"id": 4,
-			"nombre": "Banda Amarilla",
+			"nombre": "BANDA AMARILLA",
 			"precio": 3000,
 			"categoria": 3,
 			"marca": "Gorbanation",
@@ -135,6 +138,15 @@
 			"marca": "Gorbanation",
 			"stock": 2,
 			"img":"../img/imgproductos/paralelas-metal3.jpg"
+		},
+		{
+			"id": 16,
+			"nombre": "Muñequera Calisthenics pro ",
+			"precio": 4000,
+			"categoria": 4,
+			"marca": "Gorbanation",
+			"stock": 2,
+			"img":"../img/imgproductos/muñequerasCalisthenixpronegras.jpg"
 		}
 	]
 }

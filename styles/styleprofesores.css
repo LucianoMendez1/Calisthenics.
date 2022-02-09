@@ -136,7 +136,7 @@ section{
 }
 
 .home .media-icons a{
-  color: rgb(247, 243, 243);
+  color: #fbbe3a;
   font-size: 1.6em;
   transition: 0.3s ease;
 }
@@ -147,7 +147,7 @@ section{
 
 .home .media-icons a:hover{
   transform: scale(1.3);
-  color: #e2ab35;
+  color: #fffefa;
 }
 
 .home video{
@@ -242,7 +242,7 @@ section{
   }
 
   header .navigation .navigation-items a:before{
-    background: #222;
+    background: #e2ab35;
     height: 5px;
   }
 

@@ -8,17 +8,19 @@
   <title>Calisthenics | Contacto</title>
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
 
 
+  <link rel="stylesheet" href="../fonts/style.css">
   <link rel="stylesheet" href="../styles/styleConctacto.css">
-
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="../Contacto/contacto.js" defer></script>
-  <script src="../Contacto/mensajeRecibido.js" defer></script>
+  
   <script defer src="../index.js"></script>
+  
+
 
 </head>
 
@@ -57,52 +59,52 @@
           <form action="#" class="main__form">
             <h2 class="main_titulo">Contáctanos</h2>
             <div class="main__form" id=" contact-container">
-            
-            <label for="nombre">Nombre y Apellido
-            <input type="text" name="nombre" id="nombreApellido" placeholder="   Escribe tu nombre y apellido"
-              required />
-            </label>
-            
-            <label for="email">Correo Electronico
-              <input type="email" name="email" id="correoElectronico" placeholder="Escribe tu correo electronico"
-                required />
-            </label>
 
-            <label for="comentarios">Mensaje
-              <textarea name="comentarios" id="comentarios" cols="30" rows="5"
-                onkeypress="if(event.keyCode==13){enviarContacto()}" placeholder="Escribe tu Comentario"
-                required></textarea></label>
-            </label>
-
-
-            <div class="formulario__grupo" id="grupo__terminos">
-              <label class="formulario__label">
-                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                Acepto los Terminos y Condiciones
+              <label for="nombre">Nombre y Apellido
+                <input type="text" name="nombre" id="nombreApellido" placeholder="   Escribe tu nombre y apellido"
+                  required />
               </label>
+
+              <label for="email">Correo Electronico
+                <input type="email" name="email" id="correoElectronico" placeholder="Escribe tu correo electronico"
+                  required />
+              </label>
+
+              <label for="comentarios">Mensaje
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5"
+                  onkeypress="if(event.keyCode==13){enviarContacto()}" placeholder="Escribe tu Comentario"
+                  required></textarea></label>
+              </label>
+
+
+              <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                  <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                  Acepto los Terminos y Condiciones
+                </label>
+              </div>
+
+
+
+              <input type="submit" id="button-contact" onclick="enviarContacto()" value="Enviar ">
+              <br>
+
+
+              <div id="div-contact">
+                <div class="spinner"></div></br>
+              </div>
+              <!--   <p class="p-alert">Las casillas estan incompletas!</p> -->
+
             </div>
-
-            
-
-            <input type="button" id="button-contact" onclick="enviarContacto()" value="Enviar ">
-            <br>
-
-
-            <div id="div-contact">
-              <div class="spinner"></div></br>
-            </div>
-            <!--   <p class="p-alert">Las casillas estan incompletas!</p> -->
-
-        </div>
-        </form>
+          </form>
         </div>
         <div class="derecha">
           <div class="content-video">
-            
-            <video class="video" src="../videos/Street Workout_Calisthenics Male WORLD Championship 2021.mp4" autoplay muted loop></video>
+
+            <video class="video" src="../videos/Street Workout_Calisthenics Male WORLD Championship 2021_Trim.mp4" autoplay muted loop></video>
           </div>
-         
-          
+
+
         </div>
       </section>
 

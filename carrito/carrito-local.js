@@ -3,20 +3,28 @@ $(() => {
 	imprimirCarrito(carrito);
 });
 
+
+
+
+
+
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos;
 
 function obtenerProductos() {
-	$.get("https://apptrazojes2020.000webhostapp.com/presenta/productos.json", (respuesta, estado) => {
+	$.get("https://apptrazojes2020.000webhostapp.com/presenta/productos.json", (respuesta) => {
 		productos = respuesta.productos;
-		imprimirProductos(productos);
+		imprimirProductos(productos,true);
 	});
 }
 
-function imprimirProductos(array) {
+function imprimirProductos(array, animacion) {
+	let fadeTime = animacion ? 800 : 0;
+    let delayTime = 50;
 	$("#container").empty();
 	array.forEach((prod) => {
-
+		delayTime = animacion ? delayTime + 200 : 0;
 		let enCarrito = carrito.some(
 			(prodEnCarrito) => prodEnCarrito.id === prod.id
 		);
@@ -28,7 +36,7 @@ function imprimirProductos(array) {
                     <img src="${prod.img}" alt="${prod.nombre}">
                     <div>
                         <h2>${prod.nombre}</h2>
-                        <h3>$${prod.precio}</h3>
+                        <h3> $${prod.precio}</h3>
                     </div>
                 </div>
                 <button id="${prod.id}" ${enCarrito ? "disabled" : null
@@ -36,6 +44,9 @@ function imprimirProductos(array) {
 				}</button>
             </div>
             `)
+			.hide()
+				.delay(delayTime)
+				.fadeIn(fadeTime)
 		);
 	});
 }
@@ -85,7 +96,7 @@ function imprimirCarrito(array) {
 	$("#table-modal").append(`
 				<div id="total">
 					<span class="total">Total: $${total.toFixed(2)}</span>
-					<button id="comprar" class="comprarLibros">Comprar</button>
+					<button id="comprar" class="comprarproductos">Comprar</button>
 				</div>
 	`);
 
@@ -108,7 +119,7 @@ const compraHecha = elemento => {
 
 		imprimirCarrito(carrito);
 		localStorage.setItem("carrito", JSON.stringify(carrito));
-		imprimirLibros(libros);
+		imprimirProductos(productos);
 	})
 }
 const carritoVacio = elemento => {

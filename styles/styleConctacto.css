@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; 
- 
+  font-family: "Poppins", sans-serif;
 }
 
 html{
@@ -127,7 +127,7 @@ header {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 992px;
   margin: 0 auto;
   
@@ -141,10 +141,13 @@ header {
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 23px;
+  
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
+  color: #fad323;
+  text-transform: uppercase;
 }
 
 .nav-menu {
@@ -196,13 +199,14 @@ header {
   }
 
   .header {
-    height: 60px;
+    height: 80px;
   }
 
   .logo {
     font-size: 25px;
     padding: 0 20px;
     line-height: 60px;
+    color: #fdcf01;
   }
 
   .nav-menu {
@@ -234,6 +238,8 @@ header {
 
   .nav-toggle {
     display: block;
+    color: #ffffffe8;
+
   }
 
   .nav-menu_visible {
@@ -248,14 +254,14 @@ header {
 
 
 .izquierda{
-  background: #ffffffab;
+  background: #141414;
   height: 100vh;
   width: 50%;
 
 }
 
 .derecha{
-  
+  z-index: 0;
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -299,7 +305,7 @@ header {
   flex-direction: column;
   align-items: center;
   background:#141414;
-  padding-top: 90px;
+  padding-top: 50px;
  
   
 }
@@ -369,6 +375,7 @@ header {
   text-align: center;
   justify-content: center;
   border-radius: 5px;
+  overflow: scroll;
 }
 
 #button-contact {
@@ -401,4 +408,84 @@ header {
 .footer{
   padding: 50px;
   color: #fafcf7;
+}
+
+@media (max-width: 768px){
+  .derecha {
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    width: 1%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background: #000000;
+}
+
+
+  .izquierda{
+    background: #141414;
+    height: 100vh;
+    width: 100%;
+  
+  }
+  .video{
+    display: none;
+  }
+
+  #pantalla-dividida{
+    display: flex;
+    margin-top: 80px;
+  }
+  
+  
+  .izquierda .main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#141414;
+    padding-top: 10px;
+   
+  }
+}
+
+
+@media (max-width: 480px){
+  .derecha {
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    width: 1%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background: #141414;
+}
+
+
+  .izquierda{
+    background: #141414;
+    height: 100vh;
+    width: 100%;
+  
+  }
+  .video{
+    display: none;
+  }
+
+  #pantalla-dividida{
+    display: flex;
+    margin-top: 80px;
+  }
+  
+  
+  .izquierda .main__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#141414;
+    padding-top: 10px;
+   
+  }
+
 }

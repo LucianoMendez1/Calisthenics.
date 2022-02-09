@@ -132,7 +132,7 @@ section{
 }
 
 .home .media-icons a{
-  color: rgb(0, 0, 0);
+  color:#fbbe3a;
   font-size: 1.6em;
   transition: 0.3s ease;
 }
@@ -237,7 +237,7 @@ section{
   }
 
   header .navigation .navigation-items a:before{
-    background: #222;
+    background: #fbbe3a;
     height: 5px;
   }
 
